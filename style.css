@@ -1,0 +1,235 @@
+/* Seção Sobre mim */
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#f8f8f8;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    list-style: none;
+    padding: 12px;
+    margin: 0;
+    align-items: center;
+    background-color:#f8af04;
+    flex-wrap: wrap;
+
+}
+.menu a{
+    display:inline-block;
+    padding: 10px 18px;
+    color:black;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu a:hover {
+    background-color: rgb(233, 233, 233);
+}
+.cartao{
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+    align-items: flex-start;
+    height: auto;
+    width: 900px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(900px, calc(100% - 32px));
+    height: auto;
+    padding: 24px;
+}
+.cartao h1{
+    margin-top: 18px;
+    font-size: 36px;
+    align-self:center;
+}
+.conteudo{
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+    gap: 24px;
+    width: 100%;
+}
+.conteudo p{
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    font-size: 20px;
+    margin-left: 18px;
+    text-align: justify;
+    
+    
+}
+.conteudo img{
+    width: 400px;
+    height: 400px;
+    border-radius: 300%;
+    margin-left: 18px;
+    object-fit: cover;
+    margin-top: -40px;
+}
+
+/* Seção formação */
+.formacao {
+    background-color: #f8f8f8;
+    flex: 1;
+    min-height: 0;
+    padding: 24px 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.pagina-formacao {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.formacao h1{
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.formacao-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.formacao-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.formacao-card > div {
+    flex: 1;
+    min-width: 0;
+}
+.icone {
+    font-size: 32px;
+}
+
+.formacao-card h3 {
+    margin: 0 0 8px;
+    color: #222;
+}
+
+.instituicao {
+    color: #3984f5;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.formacao-card p {
+    line-height: 1.6;
+}
+
+.status {
+    display: inline-block;
+    background-color: #dff5e5;
+    color: #24733b;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.andamento {
+    background-color: #e1ecff;
+    color: #2458a6;
+}
+.subtitulo {
+    color: #3984f5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.formacao h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    color: #666;
+    line-height: 1.7;
+    max-width: 650px;
+    margin-bottom: 35px;
+}
+
+.formacao-lista {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    gap: 12px;
+}
+
+.formacao-card {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-height: 0;
+    gap: 16px;
+    background-color: rgb(233, 233, 233);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+}
+
+.formacao-card:hover {
+    transform: translateY(-4px);
+}
+
+/*Seção portfólio*/
+.portfolio img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+}
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.portfolio p {
+    margin: 0;
+    text-align: justify;
+    float: left;
+    margin-top: -100px;
+    font-size: 20px;
+    font-family: Times New Roman, Times, serif;
+}
+
+/* Seção contato */
+
+@media (max-height: 600px) {
+    .pagina-formacao {
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+    }
+}
