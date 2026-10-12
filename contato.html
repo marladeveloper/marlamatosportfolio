@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,14 +14,21 @@
             <li><a href="contato.html">Contato</a></li>                 
     </nav>
     <div class="cartao">
-        <h1>Sobre mim</h1>
-    <div class="conteudo"
-        <p>Olá! Meu nome é Marla Matos, tenho 26 anos e sou professora de Língua Portuguesa e Língua Inglesa. Sou formada em Letras – Português/Inglês pela Universidade Federal de Sergipe (UFS), onde concluí minha graduação em 2025.
-        Os conhecimentos desenvolvidos principalmente nas áreas de Língua Portuguesa e redação contribuíram para que eu conquistasse uma bolsa integral na UNINTER, onde iniciei a graduação em Engenharia de Software.
-        <br>
-        Fora da vida acadêmica e profissional, gosto de tocar violão e guitarra, ler, jogar videogame e passar tempo no computador, explorando programas ou aprendendo algo novo.
-        </p>
-        <img src="Imagens/minhafoto.JPEG" alt="Foto de Marla">
+        <h1>Entre em contato</h1>
+        <p>Preencha o formulário abaixo para falar comigo!</p>
+        <form id="formContato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome"
+            placeholder="Digite seu nome" required>
+            <label for="e-mail">E-mail</label>
+            <input type="texto" id="email" email="e-mail"
+            placeholder="Digite seu e-mail" required>
+             <br> <br><label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem"
+            placeholder="Digite aqui sua mensagem" required></textarea>
+            <button type="submit">Enviar mensagem</button>
+            
+        </form>
     </div> 
 </div>
 </body>
