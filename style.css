@@ -229,6 +229,19 @@ body{
 /* Seção contato */
 
 
+#formContato textarea {
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+
+
+
 /* Menu para celulares */
 @media (max-width: 600px) {
     .menu {
@@ -244,5 +257,77 @@ body{
         padding: 8px 10px;
         font-size: 14px;
         border-radius: 8px;
+    }
+}
+/*Sobre mim para celulares*/ 
+
+@media (max-width: 600px) {
+    .cartao {
+        width: calc(100% - 24px);
+        box-sizing: border-box;
+        padding: 16px;
+        margin: 16px auto;
+        border-radius: 20px;
+    }
+
+    .cartao h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .conteudo img {
+        width: 200px;
+        height: 200px;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .conteudo p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0;
+        text-align: justify;
+    }
+}
+
+
+/*Portfolio para celulares*/
+@media (max-width: 600px) {
+    .portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .portfolio p {
+        margin: 0;
+        float: none;
+        font-size: 16px;
+    }
+}
+    /*Contato para celulares*/
+    
+@media (max-width: 600px) {
+    #formContato textarea {
+        width: 100%;
+        height: 180px;
+        margin-top: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        resize: vertical;
     }
 }
