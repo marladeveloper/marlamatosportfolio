@@ -235,3 +235,27 @@ body{
         overflow: auto;
     }
 }
+```css
+/* Menu para celulares */
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+        align-items: stretch;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+```
