@@ -1,4 +1,6 @@
 
+alert("JavaScript carregado!");
+
 const formulario = document.getElementById("formContato");
 
 formulario.addEventListener("submit", function(event) {
